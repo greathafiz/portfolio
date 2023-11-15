@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import ProjectsView from "../views/ProjectsView.vue";
+import ContactView from "../views/ContactView.vue";
 
 const routes = [
   {
@@ -16,6 +18,20 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  {
+    path: "/projects",
+    name: "projects",
+    component: ProjectsView,
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: ContactView,
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
+  }
 ];
 
 const router = createRouter({
