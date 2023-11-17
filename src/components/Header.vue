@@ -30,10 +30,8 @@ header {
     height: 5rem;
     background: #e2e3e5;
     margin-bottom: 50px;
-    /* position: fixed;
-    top: 0;
-    transition: top 1s; */
-    /* z-index: 100; */
+    /* position: fixed; */
+    /* z-index: 999; */
 }
 
 h1 {

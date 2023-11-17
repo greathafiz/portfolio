@@ -21,8 +21,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 #app {
-  display: flex;
-  flex-direction: column;
   position: relative;
   overflow: hidden;
 }
@@ -42,13 +40,6 @@ body {
 a {
   color: unset;
   text-decoration: none;
-}
-
-img {
-  width: 400px;
-  height: 400px;
-  border: 1px #000 solid;
-  border-radius: 50%;
 }
 
 .btn {
