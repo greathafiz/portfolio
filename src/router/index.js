@@ -1,13 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/Home.vue";
-import ProjectsView from "../views/Projects.vue";
-import ContactView from "../views/Contact.vue";
+import Home from "../views/Home.vue";
+import Projects from "../views/Projects.vue";
+import Contact from "../views/Contact.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component: Home,
+    meta: {
+      title: "Home - Abdul-Hafiz Aderemi",
+    },
   },
   {
     path: "/about",
@@ -17,26 +20,41 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    meta: {
+      title: "About - Abdul-Hafiz Aderemi",
+    },
   },
   {
     path: "/projects",
     name: "projects",
-    component: ProjectsView,
+    component: Projects,
+    meta: {
+      title: "Projects - Abdul-Hafiz Aderemi",
+    },
   },
   {
     path: "/contact",
     name: "contact",
-    component: ContactView,
+    component: Contact,
+    meta: {
+      title: "Contact - Abdul-Hafiz Aderemi",
+    },
   },
   {
-    path: '/:pathMatch(.*)*',
-    redirect: '/'
-  }
+    path: "/:pathMatch(.*)*",
+    redirect: "/",
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+// Dynamically change page title
+
+router.beforeEach((to, from) => {
+  document.title = to.meta?.title ?? "Default Title";
 });
 
 export default router;
