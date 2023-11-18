@@ -33,9 +33,11 @@ export default {
             projects: [
                 {name: 'Blog API', techUsed: 'Node.js, Express, MongoDB', demoLink: 'https://github.com/greathafiz/blog-api#readme', sourceCodeLink: 'https://github.com/greathafiz/blog-api'},
                 {name: 'TaskManager API', techUsed: 'Node.js, Express, MongoDB', demoLink: 'https://github.com/greathafiz/task-manager-api#readme', sourceCodeLink: 'https://github.com/greathafiz/task-manager-api'},
-                {name: 'Mini Blogging Platform', techUsed: 'Node.js, Express, MongoDB, Handlebars', demoLink: 'https://mini-blog-app.onrender.com/', sourceCodeLink: 'https://github.com/greathafiz/mini-blog-app'},
+                {name: 'Mini Blogging Platform', techUsed: 'Node.js, Express, MongoDB, Handlebars, Google OAuth 2.0', demoLink: 'https://mini-blog-app.onrender.com/', sourceCodeLink: 'https://github.com/greathafiz/mini-blog-app'},
                 {name: 'URL Shortener', techUsed: 'Node.js, Express, MongoDB', demoLink: 'https://express-url-shortener.onrender.com/', sourceCodeLink: 'https://github.com/greathafiz/url_shortener'},
-                {name: 'Chat App', techUsed: 'Node.js, Express, MongoDB, Socket.io', demoLink: 'https://chat-app-uajv.onrender.com/', sourceCodeLink: 'https://github.com/greathafiz/chat_app'}
+                {name: 'Chat App', techUsed: 'Node.js, Express, Socket.io', demoLink: 'https://chat-app-uajv.onrender.com/', sourceCodeLink: 'https://github.com/greathafiz/chat_app'},
+                {name: 'Wikipedia Web Scraper', techUsed: 'Node.js, Express, Axios, Cherrio', demoLink: 'https://github.com/greathafiz/wiki-web-scraper#readme', sourceCodeLink: 'https://github.com/greathafiz/wiki-web-scraper'},
+                {name: 'Search API for Ecom Store', techUsed: 'Node.js, Express', demoLink: 'https://github.com/greathafiz/ecom-store-search-API#readme', sourceCodeLink: 'https://github.com/greathafiz/ecom-store-search-API'},
             ]
         }
     }
