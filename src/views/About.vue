@@ -25,6 +25,11 @@
           <h2>ExpressJS</h2>
         </div>
 
+        <div class="skill-card">
+          <img src="../assets/typescriptlang-icon.svg" alt="typescript-icon">
+          <h2>TypeScript</h2>
+        </div>
+
         <div class="skill-card"><img src="../assets/mongodb-icon.svg" alt="mongodb-icon">
           <h2>MongoDB</h2>
         </div>
